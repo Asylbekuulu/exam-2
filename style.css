@@ -1,7 +1,42 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family:'Roboto', sans-serif;
+}
 .header{
     display: flex;
     justify-content: space-between;
     align-items: center;
     max-width: 1124px;
     height: 72px;
+}
+.header>img{
+    margin-left: 80px;
+}
+.header__login{
+    display: flex;
+    align-items: center;
+    margin-right: 88px;
+}
+.header__btn_white{
+    width: 80px;
+    height: 40px;
+    border: 1px solid #E0E0E0;
+    border-radius: 2px;
+    background: white;
+    font-size: 13px;
+    line-height: 24px;
+    color: #1d1d1d;
+    margin-right: 14px;
+}
+.header__btn_black{
+    width: 80px;
+    height: 40px;
+    background: #262626;
+    border-radius: 2px;
+    font-size: 13px;
+    line-height: 24px;
+    color: #ffffff;
+    border: none;
+    margin-right: 17px;
 }
