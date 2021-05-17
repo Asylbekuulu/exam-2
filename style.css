@@ -117,6 +117,7 @@ body{
 }
 .table{
     margin-top: 55px;
+    margin-bottom: 80px;
 }
 .table__menu{
     display: grid;
@@ -170,4 +171,81 @@ body{
         background: #dfdede;
     }
 }
-
+.footer{
+    max-width: 1124px;
+    background: #262626;
+    padding-left: 82px;
+}
+.footer__logo{
+    width: 956px;
+    height: 116px;
+    background:  #262626;
+}
+.footer__logo>img{
+    margin-top: 56px;
+}
+.footer__menu{
+    display: flex;
+    background: #262626;
+    width: 956px;
+    height: 220px;
+    border-bottom: 1px solid #d6d5d5;
+    border-top: 1px solid #d6d5d5;
+}
+.footer__language{
+    display: flex;
+    flex-direction: column;
+    justify-content:start;
+    align-items: center;
+}
+.language{
+    margin-top: 32px;
+}
+.social{
+    margin: 33px 0px 0px -128px;
+}
+.footer__partners{
+    margin-left: 55px;
+}
+.footer__partners>ul>li>a{
+    text-decoration: none;
+    font-size: 13px;
+    line-height: 15px;;
+    color: #FFFFFF;
+}
+.footer__partners>ul>li{
+    list-style: none;
+    margin-bottom: 21px;
+}
+.footer__partners>ul{
+    margin-top: 36px;
+}
+.footer__about-uber{
+    margin-left: 115px;
+}
+.footer__about-uber>ul>li>a{
+    text-decoration: none;
+    font-size: 13px;
+    line-height: 15px;
+    color: #FFFFFF;
+}
+.footer__about-uber>ul>li{
+    margin-bottom: 20px;
+    list-style: none;
+}
+.footer__about-uber>ul{
+    margin-top: 36px;
+}
+.footer__about{
+    display: flex;
+    width: 956px;
+    height: 105px;
+    background: #262626;
+}
+.footer__about>p{
+    font-size: 11px;
+    line-height: 13px;
+    color: #FFFFFF;
+    margin-right: 231px;
+    margin-top: 40px;
+}
