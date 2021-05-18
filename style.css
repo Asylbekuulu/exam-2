@@ -263,3 +263,92 @@ body{
     margin-right: 231px;
     margin-top: 40px;
 }
+@media only screen and (max-width:768px){
+    .header{
+        max-width: 768px;
+        justify-content: space-between;
+    }
+    .header>img{
+        margin: 9px;
+    }
+    .header__login{
+        margin-right: 25px;
+    }
+    .header-2{
+        max-width: 768px;
+        height: 364px;
+        background: url("./images/photo2.png");
+    }
+    .header-2__description{
+        left: 8px;
+        width: 424px;
+        height: 204px;
+    }
+    .menu{
+        max-width: 768px;
+    }
+    .menu>ul{
+        margin-left:-68px;
+    }
+    .table{
+        max-width: 768px;
+    }
+    .table__title{
+        margin-left: 8px;
+    }
+    .table__menu{
+        display: grid;
+        grid-template-columns: 752px;
+        grid-template-rows: repeat(6, 160px);
+        grid-gap: 32px;
+        margin-left: 8px;
+    }
+    .table__foods{
+        max-width: 752px;
+        height: 160px;
+    }
+    .footer{
+        max-width: 768px;
+        padding-left: 8px;
+    }
+    .footer__logo{
+        max-width: 752px;
+    }
+    .footer__menu{
+        max-width: 752px
+    }
+    .footer__about{
+        max-width: 752px;
+    }
+    .footer__about>p{
+        margin-right: 135px;
+    }
+    .footer__about>p:last-of-type{
+        margin-left: 69px;
+    }
+    .footer__partners{
+        margin-left: 15px;
+    }
+    .footer__about-uber{
+        margin-left: 33px;
+    }
+}
+@media only screen and (max-width:320px) {
+    .header{
+        max-width: 320px;
+    }
+    .header__login{
+        margin-right: 2px;
+    }
+    .header__login>svg{
+        display: none;
+    }
+    .header__btn_white{
+        width: 72px;
+        height: 40px;
+    }
+    .header__btn_black{
+        width: 72px;
+        height: 40px;
+    }
+}
