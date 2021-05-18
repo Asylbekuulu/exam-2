@@ -446,7 +446,7 @@ body{
     .footer__language{
         align-items: flex-start;
     }
-    .footer__language>img:first-of-type{
+    .languge{
         width: 173px;
         height: 40px;
     }
