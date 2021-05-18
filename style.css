@@ -11,8 +11,11 @@ body{
     max-width: 1124px;
     height: 72px;
 }
-.header>img{
+.header>img:first-of-type{
     margin-left: 80px;
+}
+.mobile-logo{
+    display: none;
 }
 .header__login{
     display: flex;
@@ -75,7 +78,8 @@ body{
 .header-2__description>h1{
     text-align: center;
     font-size: 36px;
-    font-weight: normal;line-height: 42px;
+    font-weight: normal;
+    line-height: 42px;
     margin-bottom: 50px;
 }
 .header-2__btn{
@@ -132,6 +136,9 @@ body{
 .table{
     margin-top: 55px;
     margin-bottom: 80px;
+}
+.table>svg{
+    display: none;
 }
 .table__menu{
     display: grid;
@@ -268,7 +275,7 @@ body{
         max-width: 768px;
         justify-content: space-between;
     }
-    .header>img{
+    .header>img:first-of-type{
         margin: 9px;
     }
     .header__login{
@@ -333,12 +340,22 @@ body{
         margin-left: 33px;
     }
 }
-@media only screen and (max-width:320px) {
+@media only screen and (max-width:400px) {
+    .body{
+        max-width: 320px;
+    }
     .header{
         max-width: 320px;
     }
     .header__login{
         margin-right: 2px;
+    }
+    .header>img:first-of-type{
+        display: none;
+    }
+    .mobile-logo{
+        display: block;
+        margin-left: 8px;
     }
     .header__login>svg{
         display: none;
@@ -350,5 +367,121 @@ body{
     .header__btn_black{
         width: 72px;
         height: 40px;
+        margin-right: 2px;
+    }
+    .header-2{
+        background: url("./images/mobile/d42ea9bbf7aff297c2e1eb5e5f3b7fa6-w1080-87.png");
+    }
+    .header-2__description{
+        max-width: 308px;
+        height: 180px;
+        left: 8px;
+        top: 203px;
+    }
+    .header-2__description>h1{
+        font-size: 24px;
+        line-height: 28px;
+    }
+    .menu{
+        max-width: 320px;
+        border: none;
+    }
+    .menu>ul{
+        display: none;
+    }
+    .table{
+        max-width: 320px;
+        position: relative;
+    }
+    .table>h2{
+        margin-top: -60px;
+        font-size: 22px;
+        line-height: 34px;
+        text-align: center;
+    }
+    .table>svg{
+        position: absolute;
+        display: block;
+        left: 135px;
+        top: 44px; 
+    }
+    .table__foods{
+        max-width: 320px;
+        height: 102px;
+        border: none;
+        border-bottom: 1px solid #757575;
+    }
+    .table__menu{
+        grid-template-columns: 308px;
+        grid-template-rows: repeat(6, 102px);
+        grid-gap: 16px;
+    }
+    .food-title>p:first-of-type{
+        font-size: 14px;
+        line-height: 24px;
+        margin-left: 8px;
+        margin-bottom: -44px;
+    }
+    .special>p:first-of-type{
+        margin: 16px 4px 0px 16px;
+        white-space: nowrap;
+        overflow: hidden;
+        width: 160px;
+        text-overflow: ellipsis;
+    }   
+    .special>p:last-of-type{
+        margin-top: 18px;
+    } 
+    .table__foods>img{
+        width: 102px;
+        height: 102px;
+    }
+    .footer{
+        max-width: 320px;
+        height: 769px;
+    }
+    .footer__logo{
+        max-width: 320px;
+    }
+    .footer__language{
+        align-items: flex-start;
+    }
+    .footer__language>img:first-of-type{
+        width: 173px;
+        height: 40px;
+    }
+    .social{
+        width: 96px;
+        height: 59px;
+        margin: 32px 0px 0px 0px;
+    }
+    .footer__menu{
+        display: flex;
+        flex-direction: column;
+        max-width: 320px;
+        height: 492px;
+    }
+    .footer__about{
+        max-width: 320px;
+        display: flex;
+        flex-direction: column;
+    }
+    .footer__partners, .footer__about-uber{
+        margin-left: 4px;
+    }
+    .footer__partners>ul{
+        padding: 0px;
+        margin-bottom: 0px;
+    }
+    .footer__about-uber>ul{
+        padding: 0px;
+        margin-top: 0px;
+    }
+    .footer__about>p{
+        margin-left: 0px;
+        margin-top: 23px;
+    }
+    .footer__about>p:last-of-type{
+        margin-left: 0px;
     }
 }
